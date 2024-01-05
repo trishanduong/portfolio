@@ -2,13 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap');
-
-h1 {
-  font-family: 'Switzer', sans-serif;
-}
-
-h2 {
-  font-family: 'Switzer', sans-serif;
-}
 

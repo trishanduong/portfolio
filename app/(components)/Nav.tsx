@@ -2,13 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import gsap from "gsap";
-import Flip from "gsap/dist/Flip";
-
 export default function NavBar() {
-  gsap.registerPlugin(Flip);
 
-  
   return (
     <header
       className="fixed top-0 flex w-full items-center justify-between bg-secondary-100 px-5 py-3"
@@ -17,23 +12,23 @@ export default function NavBar() {
         <Image
           src="/logo.svg"
           alt="trish logo"
-          className="dark:invert"
+          className="invert"
           width={100}
           height={24}
           priority
         />
       </Link>
       <nav className="space-x-7 text-body-3 sm:block text-white font-semibold">
-        <Link href="#about" className="group relative md:inline-block">
+        <Link href="#about" className="group relative hover:text-slate-300  md:inline-block">
           <span>ABOUT</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
-        <Link href="#works" className="group relative md:inline-block">
+        <Link href="#works" className="group relative hover:text-slate-300 md:inline-block">
           <span>PROJECTS</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
         <Link
-          className="button group relative hover:bg-transparent"
+          className="group relative p-3 bg-slate-800 rounded-full hover:bg-slate-600 hover:text-slate-900"
           href="#contact"
         >
           <span className="relative w-fit">
