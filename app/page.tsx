@@ -9,7 +9,7 @@ export default function Home() {
   const sectionRefs = useRef([]); 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-stone-950">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-sky-950">
       <NavBar />
       {/* Make the parent of the lanterns with relative*/}
       <div className='relative flex justify-center flex-col'>

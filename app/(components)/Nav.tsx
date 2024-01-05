@@ -2,8 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function NavBar() {
+import gsap from "gsap";
+import Flip from "gsap/dist/Flip";
 
+export default function NavBar() {
+  gsap.registerPlugin(Flip);
+
+  
   return (
     <header
       className="fixed top-0 flex w-full items-center justify-between bg-secondary-100 px-5 py-3"
