@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/starrynight1.png')",
+        'hero-bg': "url('/landing/bg1.svg')",
       },
     },
   },
