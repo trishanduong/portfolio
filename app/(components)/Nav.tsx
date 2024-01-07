@@ -1,15 +1,24 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 
-export default function NavBar() {
+export default function NavBar({ sectionRefs }:{
+  sectionRefs:HTMLElement[],
+}): JSX.Element {
+  
+  const nav = useRef(null);
+  const logo = useRef(null);
+  const cta = useRef(null);
 
   return (
     <header
-      className="fixed flex w-full items-center justify-between bg-secondary-100 px-5 py-3 z-50"
+      className="fixed flex w-full items-center justify-between bg-secondary-100 px-5 py-3 z-50 bg-slate-950 bg-opacity-30 backdrop-blur-sm"
+      ref={nav}
     >
       <Link href="#hero" aria-label="Logo" className="z-50">
         <Image
+          ref={logo}
           src="/logo.svg"
           alt="trish logo"
           className="invert"
@@ -30,6 +39,7 @@ export default function NavBar() {
         <Link
           className="group relative p-3 bg-slate-800 rounded-full hover:bg-slate-600 hover:text-slate-900"
           href="#contact"
+          ref={cta}
         >
           <span className="relative w-fit">
             <span className="absolute bottom-2 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
