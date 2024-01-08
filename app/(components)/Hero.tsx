@@ -9,7 +9,7 @@ export default function Hero({ forwardedRef }:{
 }): JSX.Element  {
   const comp = useRef(null); //reference for the root level element
   const driftyLanterns = useRef(null);
-  const bg = useRef(null);
+  const scroll = useRef(null);
 
   useLayoutEffect(() => {
     //create a gsap context to record all GSAP animations set up during context execution (for cleanup)
@@ -28,7 +28,8 @@ export default function Hero({ forwardedRef }:{
           stagger:0.3,
         })
         // .to('.moon', {rotate:45, repeat:-1, yoyo:true, duration:5})
-
+      
+        gsap.to(".mainchar", {x:"+=50", repeat:-1, yoyo:true, duration:2})
     }, [comp, driftyLanterns]); //pass comp as context object so all animation affects children of comp component
 
     //when the effect is unmounted/cleaned, revert the animation set up by GSAP context -> allow animation to not be persisted
@@ -36,21 +37,21 @@ export default function Hero({ forwardedRef }:{
   }, []); //fires off after all DOM mutations are complete;
 
 
-  useEffect(() => {
-    ScrollTrigger.create({
-      trigger: bg.current,
-      start:"450px bottom",
-      markers: true,
-      animation: gsap
-        .timeline()
-        .to(bg.current, { scale:3, ease: "power4.out", duration: 1.25 }, 0),
-        // .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
+  // useEffect(() => {
+  //   ScrollTrigger.create({
+  //     trigger: scroll.current,
+  //     start:"20px bottom",
+  //     markers: true,
+  //     animation: gsap
+  //       .timeline()
+  //       .to("#bg", { scale:3, ease: "power4.out", duration: 1.25 }, 0),
+  //       // .to(body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25 }, 0.2),
 
-      toggleActions: "play none none none",
-    });
-    ScrollTrigger.refresh();
-    console.log(comp.current)
-  }, [comp]);
+  //     toggleActions: "play none none none",
+  //   });
+  //   ScrollTrigger.refresh();
+  //   console.log(comp.current)
+  // }, [comp]);
 
   return (
     <div id="hero" ref={comp} className='m-0 p-0 overflow-x-hidden'>
@@ -62,7 +63,6 @@ export default function Hero({ forwardedRef }:{
         </div>
         <div>
           <Image 
-              ref={bg}
               id="bg"
               className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none"
               src="/landing/bg.png"
@@ -79,14 +79,15 @@ export default function Hero({ forwardedRef }:{
             height={1080}
           />
           <Image 
+            ref={scroll}
             className='moon absolute top-96'
             src="/landing/moon.png" width={500} height={1080} alt="Rotating moon" />
           <Image 
-            className='absolute left-0 h-screen w-screen object-cover lg:object-fill z-10 top-40 pointer-events-none'
-            src="/landing/char1.png"
+            className='mainchar absolute left-64 right-1/2 z-10 top-1/2 pointer-events-none' //h-screen w-screen object-cover lg:object-fill
+            src="/landing/character1.png"
             alt="Female silhouette in boat"
-            width={1000}
-            height={600}
+            width={400}
+            height={200}
             priority
           />
           <Image src="/landing/mainlantern.png" className='driftingLantern1 absolute z-30 top-64' width={1000} height={1080} alt="primary lantern floating over trisha duong" />
