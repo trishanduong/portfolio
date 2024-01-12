@@ -1,10 +1,6 @@
 'use client'
 
-import { useRef, useLayoutEffect, useEffect} from 'react';
-import Image from 'next/image';
-
-import gsap from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from 'react';
 
 import NavBar from './(components)/Nav';
 import Hook from './(components)/Hook';

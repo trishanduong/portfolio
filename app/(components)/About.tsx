@@ -22,12 +22,11 @@ export default function About() {
       start: "top 300px",
       animation: gsap
         .timeline()
-        .to(img.current, {
-          opacity: 1, y: 0, duration: 1, delay:0.2, ease: "power4.out"})
         .to(title.current, {opacity: 1, y: 0, duration: 0.5, delay:0.2, ease: "power4.out"})
-        .to(
-          body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25, delay:0.8 }, 0.2),
-
+        .to([img.current, body.current], {
+          opacity: 1, y: 0, duration: 1, delay:0.2, ease: "power4"}),
+        // .to(
+        //   body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25, delay:0.8 }, 0.2),
       toggleActions: "play none none none",
     });
     ScrollTrigger.refresh();
@@ -54,7 +53,7 @@ export default function About() {
               My passion extends beyond just development; I also love to contribute to open-source projects and am constantly seeking innovative solutions to complex problems.
               <br></br>
               <br></br>
-              When I am not developing, you can find me sipping on tea, watching Studio Ghibli films, or writing articles on{" "}
+              When I am not developing, you can find me enjoying a matcha latte, watching Studio Ghibli films, or writing articles on{" "}
               <Link
                 className="underline duration-300 ease-in-out hover:text-secondary-700"
                 href="https://medium.com/@trishanduong"

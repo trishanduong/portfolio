@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Background from './components/Background';
 
 export default function Hero({ forwardedRef }:{
   forwardedRef: (el: HTMLElement) => void,
@@ -62,14 +63,17 @@ export default function Hero({ forwardedRef }:{
             <h2 className='intro relative text-amber-400 tracking-tighter text-center text-4xl z-[10]'>software engineer</h2>
         </div>
         <div>
-          <Image 
+        <div className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none" >
+          <Background  />
+        </div>
+          {/* <Image 
               id="bg"
               className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none"
               src="/landing/bg.png"
               width={1920}
               height={1080}
               alt="starry background"
-            />
+            /> */}
         </div>
           <Image 
             className='absolute left-0 top-44 h-screen w-screen object-cover lg:object-fill z-10 pointer-events-none'
