@@ -6,6 +6,7 @@ import NavBar from './(components)/Nav';
 import Hook from './(components)/Hook';
 import Hero from './(components)/Hero';
 import About from './(components)/About';
+import Projects from './(components)/Projects';
 
 export default function Home() {
   const sectionRefs = useRef<HTMLElement[]>([]); 
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "}
       <Hook forwardedRef={(el) => (sectionRefs.current[1] = el)} />
       <About />
+      <Projects />
     </main>
   )
 }

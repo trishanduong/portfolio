@@ -32,9 +32,9 @@ export default function Hook({ forwardedRef }:{
     return (
       <section id="hook" ref={hookSection} className="p-100 my-48">
         <div className="w-full text-5xl lg:text-6xl tracking-tighter">
-          <div ref={text} className="w-3/4 text-sky-900 px-10 lg:px-40 font-medium opacity-0">
+          <div ref={text} className="w-full text-slate-700 px-10 lg:px-40 font-medium opacity-0">
             <h1> I create, design, and code projects with
-            <span className="italic text-sky-300"> intention.</span>
+            <span className="italic text-slate-300"> intention.</span>
             </h1>
             <h2>
               I&apos;m committed to crafting user experiences and delivering full stack applications from scratch to production.

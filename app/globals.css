@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-#hero::before {
+#hero::before, #about::before {
   content:'';
   position: absolute;
   bottom:0;
@@ -13,3 +13,21 @@
   background:linear-gradient(to top, black, transparent); 
   z-index:1000;
 }
+
+@keyframes moveGradient {
+  0% {
+    background-position: right top;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: right top;
+  }
+}
+
+.radialgradient {
+  background-image: radial-gradient(at right top, rgba(252, 211, 77, 0.2), rgba(51, 65, 85, 0.2), rgba(30, 41, 59, 0.2));
+  transition: moveGradient 5s linear infinite;
+}
+

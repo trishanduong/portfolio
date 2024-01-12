@@ -27,14 +27,14 @@ $shadows-small: multiple-box-shadow(700); // Small stars
 $shadows-medium: multiple-box-shadow(200); // Medium stars
 $shadows-big: multiple-box-shadow(100); // Big stars
   
-  // Styling for the star layers container 
+  // Styling for the star layers container #100b00
 .star-layers {
-    height: 100vh;
-    background: radial-gradient(ellipse at bottom, #0f172a 0%, #100b00 100%);
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #0f172a 0%, black 100%);
     overflow: hidden;
     position: relative;
   
-    // Styling for each star layer
+  // Styling for each star layer
   .star-layer {
       position: absolute;
       width: 1px;

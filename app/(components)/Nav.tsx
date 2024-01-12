@@ -32,7 +32,7 @@ export default function NavBar({ sectionRefs }:{
           <span>ABOUT</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
-        <Link href="#works" className="hidden group relative hover:text-slate-300 md:inline-block">
+        <Link href="#projects" className="hidden group relative hover:text-slate-300 md:inline-block">
           <span>PROJECTS</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
