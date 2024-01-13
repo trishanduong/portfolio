@@ -8,7 +8,7 @@ const Tag: React.FC <TagProps> = ({
     tech,
 }) => {
   return (
-    <div className="rounded-xl p-2 bg-slate-700 bg-opacity-20">
+    <div className="rounded-xl px-4 py-2 bg-slate-700 bg-opacity-20 text-slate-400">
       {tech}
     </div>
   )

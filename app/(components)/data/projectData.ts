@@ -1,9 +1,3 @@
-import { useRef } from "react"
-
-import Project from "./components/Project"
-
-// import ProjectData from "./data/projectData"
-
 type ProjectDataType = {
   projectName: string;
   desc: string;
@@ -17,7 +11,7 @@ const ProjectData = [
     projectName: 'PetPals 🐾',
     desc: 'The ultimate doggy playdate app - chat with fellow dog owners and set up the perfect playdate!',
     techStack: ['React', 'Next.js', 'tRPC', 'Prisma', 'Typescript', 'Tailwind CSS', 'NextAuth'],
-    images:['/projects/petpals/landing.png', '/projects/petpals/chat.png', '/projects/petpals/swipe.png', '/projects/petpals/aboutme.png', '/projects/petpals/editprofile.png'],
+    images:[],
     link:'https://petpal-xi.vercel.app/'
   },
   {
@@ -29,23 +23,4 @@ const ProjectData = [
   }
 ]
 
-
-const Projects = () => {
-  const title = useRef(null);
-
-  return (
-    <section id="projects" className="">
-      <h1 ref={title} className="text-center text-7xl font-semibold tracking-tight text-amber-400 m-5 z-90"> projects </h1>
-      <div className="relative flex flex-col gap-10 justify-center items-center w-screen">
-        { ProjectData.length > 0 && (
-            ProjectData.map((project, index) => (
-              <Project key={index} {...project} />
-            ))
-         )
-        }
-      </div>
-    </section>
-  )
-}
-
-export default Projects;
+export default ProjectData;

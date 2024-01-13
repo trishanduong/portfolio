@@ -46,9 +46,9 @@ export default function Hero({ forwardedRef }:{
           <h2 className='intro relative text-amber-400 tracking-tighter text-center text-4xl z-[10]'>software engineer</h2>
         </div>
         <div>
-        <div className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none" >
+        {/* <div className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none" >
           <Background  />
-        </div>
+        </div> */}
         </div>
           <Image 
             className='absolute left-0 top-36 h-screen w-screen object-cover lg:object-fill z-10 pointer-events-none'

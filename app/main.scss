@@ -29,10 +29,20 @@ $shadows-big: multiple-box-shadow(100); // Big stars
   
   // Styling for the star layers container #100b00
 .star-layers {
-    height: 100%;
+    // height: 100%;
+    // background: radial-gradient(ellipse at bottom, #0f172a 0%, black 100%);
+    // overflow: hidden;
+    // position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100000px; // or set this via JavaScript
+    z-index: -1; // Ensures it stays behind other content
+
     background: radial-gradient(ellipse at bottom, #0f172a 0%, black 100%);
     overflow: hidden;
-    position: relative;
   
   // Styling for each star layer
   .star-layer {
