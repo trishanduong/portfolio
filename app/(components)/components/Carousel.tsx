@@ -1,4 +1,4 @@
-import { Carousel, CarouselProps } from 'flowbite-react';
+import { Carousel } from 'flowbite-react';
 import Image from 'next/image';
 
 interface Props {
@@ -10,12 +10,20 @@ const CarouselComponent: React.FC<Props> = ({
 }) => {
   // console.log(images)
   return (
-    <div className="h-96">
+    <div className="h-56 lg:h-96 mr-3">
       <Carousel>
         { images && (
           images.map((pic, index) => (
             <div key={index} >
-              <img src={pic} alt="..." />
+              <Image 
+                src={pic} 
+                alt={pic}
+                width={750} 
+                height={350} 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+              }}/>
             </div>
            ))
           )

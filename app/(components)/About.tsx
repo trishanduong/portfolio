@@ -6,8 +6,6 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import Background from "./components/Background";
-
 export default function About() {
   const title = useRef(null);
   const aboutSection = useRef(null);
@@ -26,11 +24,11 @@ export default function About() {
         .to(title.current, {opacity: 1, y: 0, duration: 0.5, delay:0.2, ease: "power4.out"})
         .to([img.current, body.current], {
           opacity: 1, y: 0, duration: 1, delay:0.2, ease: "power4"}),
-        // .to(
-        //   body.current, { opacity: 1, y: 0, ease: "power4.out", duration: 1.25, delay:0.8 }, 0.2),
+
       toggleActions: "play none none none",
     });
     ScrollTrigger.refresh();
+
   }, [aboutSection]);
 
   return (

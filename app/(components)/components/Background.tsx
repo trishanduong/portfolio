@@ -2,7 +2,7 @@
 const Background = () => {
 
   return (
-    <div className="star-layers h-screen z-[-1]">
+    <div className="star-layers h-screen z-[-1000]">
       <div className="star-layer" id="stars"></div>
       <div className="star-layer" id="stars2"></div>
       <div className="star-layer" id="stars3"></div>
