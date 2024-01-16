@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google';
 import './globals.css';
 import './main.scss';
+import ToasterContext from './(components)/context/ToasterContext';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black inter.className">
-        {children}
+      <ToasterContext />
+          {children}
       </body>
     </html>
   )

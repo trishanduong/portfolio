@@ -41,12 +41,13 @@ export default function NavBar({ sectionRefs }:{
           href="#contact"
           ref={cta}
         >
-          <span className="relative w-fit">
-            <span className="absolute bottom-2 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
-            <span>CONTACT</span>
-          </span>
+          CONTACT
         </Link>
       </nav>
     </header>
   );
 }
+{/* <span className="relative w-fit">
+            <span className="absolute bottom-2 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
+            <span>CONTACT</span>
+          </span> */}
