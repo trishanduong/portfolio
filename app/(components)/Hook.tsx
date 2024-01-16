@@ -46,5 +46,3 @@ export default function Hook({ forwardedRef }:{
       </section>
     );
   }
-
-  //

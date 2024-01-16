@@ -9,7 +9,6 @@ export default function NavBar({ sectionRefs }:{
   
   const nav = useRef(null);
   const logo = useRef(null);
-  const cta = useRef(null);
 
   return (
     <header
@@ -38,16 +37,12 @@ export default function NavBar({ sectionRefs }:{
         </Link>
         <Link
           className="group relative p-3 bg-slate-800 rounded-full hover:bg-slate-600 hover:text-slate-900"
-          href="#contact"
-          ref={cta}
+          href="#contactme"
         >
-          CONTACT
+          <span>CONTACT</span>
+          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
       </nav>
     </header>
   );
 }
-{/* <span className="relative w-fit">
-            <span className="absolute bottom-2 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
-            <span>CONTACT</span>
-          </span> */}
