@@ -31,6 +31,14 @@ const ProjectData = [
     images:['/projects/overvue/OvervueLanding.png', 'https://media.giphy.com/media/ZulevY0tBZnUOCDpY7/giphy.gif', 'https://live.staticflickr.com/65535/53169434723_70b6cf748c_b.jpg','https://media.giphy.com/media/ptfGbJdSUODKZXY6XO/giphy.gif'],
     link:'https://www.overvue.org/'
   },
+  {
+    projectName: 'Class One Donuts 🍩',
+    secondHeading: 'Responsive Frontend website for a local business',
+    desc: 'I primarily focused on creating a landing website that was minimalistic yet fun, introducing light animations using GSAP. Most of my time was spent trying to improve performance, SEO, and the accessibility of this website.',
+    techStack: ['React.js', 'Typescript', 'TailwindCSS', 'Vite', 'gsap'],
+    images:['/projects/classonedonuts/landing.png', 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB2enRhZ3lxOWM1NDI2d2djZmN0ODFwNzF0MXRxbGhqd2R3ZXFsbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bNULtw7OLa17dG2OEc/giphy.gif', '/projects/classonedonuts/contact.png'],
+    link:'https://sensational-babka-f97e3b.netlify.app/'
+  },
   
 ]
 

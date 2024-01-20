@@ -21,13 +21,13 @@ export default function Hero({ forwardedRef }:{
       t1
         //.to('.driftingLantern1', {y:"-=400", rotate:25, opacity: 0})
         .fromTo(".intro",{scale:1, opacity:0},{y:'-=50', opacity:1, duration:0.4, stagger:0.3})
-        .to(['.driftyLantern'], {
-          y:"-=400",
-          rotate:25,
-          opacity: 0,
-          duration:3,
-          stagger:0.3,
-        })
+        // .to(['.driftyLantern'], {
+        //   y:"-=400",
+        //   rotate:25,
+        //   opacity: 0,
+        //   duration:3,
+        //   stagger:0.3,
+        // })
         // .to('.moon', {rotate:45, repeat:-1, yoyo:true, duration:5})
       
         gsap.to(".mainchar", {x:"+=50", repeat:-1, yoyo:true, duration:2})
@@ -59,7 +59,7 @@ export default function Hero({ forwardedRef }:{
           />
           <Image 
             ref={scroll}
-            className='moon absolute top-96'
+            className='moon absolute bottom-0 lg:top-96'
             src="/landing/moon.png" width={500} height={1080} alt="Rotating moon" />
           <div className='z-20'>
             <Image 
@@ -82,7 +82,7 @@ export default function Hero({ forwardedRef }:{
           {/* <Image src="/landing/mainlantern.png" className='driftingLantern1 absolute z-30 top-64' width={1000} height={1080} alt="primary lantern floating over trisha duong" /> */}
           {/* <h1 z-20 className='absolute text-slate-300 z-40 DM.className tracking-tighter bottom-0 '> {`I create, design, and code projects with intention. I'm committed to crafting user experiences and delivering full stack applications from scratch to production.`}</h1> */}
           {/* Takes the lanterns out of the normal document flow and positions them relative to the nearest parent with a relative position. */}
-          <div ref={driftyLanterns} className='relative w-full pointer-events-none'>
+          {/* <div ref={driftyLanterns} className='relative w-full pointer-events-none'>
             <div className='driftyLantern absolute right-0'>
               <div className='driftyLantern absolute bottom-0 left-0 transform z-0 blur'>
                   <Image 
@@ -107,7 +107,7 @@ export default function Hero({ forwardedRef }:{
                 height={200}
               />
             </div>
-          </div>
+          </div> */}
       </div>
     </div>
   )

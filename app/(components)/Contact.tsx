@@ -8,6 +8,10 @@ import toast from 'react-hot-toast';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
+import { IoLogoGithub } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io5";
+
+
 const ContactMe = () => {
   const {
     register,
@@ -77,23 +81,32 @@ const ContactMe = () => {
                   <input id="form-email" {...register("form-email")} type="email" placeholder="Your email" className="w-full p-2 text-xl border-gray-300 peer block text-white appearance-none border-0 border-b bg-transparent px-0 py-2.5 focus:outline-none ring-slate-500 focus:ring-0" />
                   
                   <textarea id="form-message" {...register("form-message")} placeholder="Your message" className="w-full p-2 text-xl border-gray-300 peer block text-white appearance-none border-0 border-b bg-transparent px-0 py-2.5 focus:outline-none focus:ring-0" rows={4}></textarea>
-                <button type="submit" className="bg-slate-800 text-slate-200 py-2 px-4 rounded-full text-xl">Send Message</button>
+                <button type="submit" className="bg-slate-800 text-slate-200 py-2 px-4 rounded-full text-xl hover:bg-slate-700">Send Message</button>
                 { success &&
                 (<div className="text-slate-100 font-medium text-xl">{`Thanks for reaching out. I will get back to you as soon as possible! 😁`} </div>)}
               </form>
               </div>
+              
               {/* Right Section for Contact Details and Links */}
               <div className="">
                 <h2 className="text-2xl font-bold mb-4 text-slate-500 ">Email</h2>
                 <p className="mb-4 text-xl text-slate-300">trishanduong@gmail.com</p>
                 <h2 className="text-2xl font-bold mb-4 text-slate-500 ">My Digital Spaces</h2>
                 <ul className="space-y-2 text-slate-300 text-xl">
-                  <li>         
-                    <Link href="https://github.com/trishanduong">Github</Link>
+                  <li className="p-1">         
+                    <Link href="https://github.com/trishanduong">
+                      <div className="flex ">
+                        <IoLogoGithub size={24} className="m-1" />
+                        <p>Github</p>
+                      </div>
+                      </Link>
                   </li>
-                  <li>
+                  <li className="p-1">
                     <Link href="https://www.linkedin.com/in/trishaduong/">
-                      LinkedIn
+                      <div className="flex">
+                        <IoLogoLinkedin size={24} className="m-1" />
+                        <p>Linkedin</p>
+                      </div>
                     </Link>
                   </li>
                 </ul>
