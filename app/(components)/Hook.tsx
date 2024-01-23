@@ -33,7 +33,7 @@ export default function Hook({ forwardedRef }:{
       <section id="hook" ref={hookSection} className="h-screen w-full flex justify-center items-center">
         <div className="">
           <div className="text-5xl lg:text-6xl tracking-tighter px-10 lg:px-40">
-            <div ref={text} className="w-full text-slate-600 font-medium opacity-0">
+            <div ref={text} className="w-full text-slate-500 font-medium opacity-0">
               <h1> I create, design, and code projects with
               <span className="italic text-slate-300"> intention.</span>
               </h1>

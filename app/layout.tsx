@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black inter.className">
+      <body className="inter.className">
       <ToasterContext />
           {children}
       </body>

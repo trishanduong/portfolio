@@ -12,6 +12,7 @@ type ProjectDataType = {
   techStack: string[];
   images: string[]; 
   link: string;
+  github: string;
 };
 
 const ProjectData = [
@@ -21,7 +22,8 @@ const ProjectData = [
     desc: 'The ultimate doggy playdate app - chat with fellow dog owners and set up the perfect playdate!',
     techStack: ['React', 'Next.js', 'tRPC', 'Prisma', 'PostgreSQL', 'Typescript', 'Tailwind CSS', 'NextAuth', 'Pusher'],
     images:['/projects/petpals/landing.png', '/projects/petpals/chat.png', '/projects/petpals/swipe.png', '/projects/petpals/aboutme.png', '/projects/petpals/editprofile.png'],
-    link:'https://petpal-xi.vercel.app/'
+    link:'https://petpal-xi.vercel.app/',
+    github:'https://github.com/trishanduong/petpal',
   },
   {
     projectName: 'OverVue 10.0',
@@ -29,7 +31,8 @@ const ProjectData = [
     desc: 'An intuitive Vue prototyping tool that enables developers to seamlessly build & visualize Vue.js applications.',
     techStack: ['Vue.js', 'Vuetensils', 'Vue Router', 'Pinia', 'Jest', 'Electron', 'Quasar'],
     images:['/projects/overvue/OvervueLanding.png', 'https://media.giphy.com/media/ZulevY0tBZnUOCDpY7/giphy.gif', 'https://live.staticflickr.com/65535/53169434723_70b6cf748c_b.jpg','https://media.giphy.com/media/ptfGbJdSUODKZXY6XO/giphy.gif'],
-    link:'https://www.overvue.org/'
+    link:'https://www.overvue.org/',
+    github: 'https://github.com/open-source-labs/OverVue'
   },
   {
     projectName: 'Class One Donuts 🍩',
@@ -37,7 +40,8 @@ const ProjectData = [
     desc: 'I primarily focused on creating a landing website that was minimalistic yet fun, introducing light animations using GSAP. Most of my time was spent trying to improve performance, SEO, and the accessibility of this website.',
     techStack: ['React.js', 'Typescript', 'TailwindCSS', 'Vite', 'gsap'],
     images:['/projects/classonedonuts/landing.png', 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB2enRhZ3lxOWM1NDI2d2djZmN0ODFwNzF0MXRxbGhqd2R3ZXFsbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bNULtw7OLa17dG2OEc/giphy.gif', '/projects/classonedonuts/contact.png'],
-    link:'https://sensational-babka-f97e3b.netlify.app/'
+    link:'https://sensational-babka-f97e3b.netlify.app/',
+    github:'https://github.com/trishanduong/classonedonuts',
   },
   
 ]

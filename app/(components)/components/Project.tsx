@@ -15,6 +15,7 @@ interface ProjectProps {
   techStack: string[],
   link: string,
   images: string[],
+  github: string,
 };
 
 const Project:React.FC<ProjectProps> = ({
@@ -24,6 +25,7 @@ const Project:React.FC<ProjectProps> = ({
    techStack,
    link,
    images,
+   github,
 }) => {
   const project = useRef(null);
 
@@ -43,7 +45,7 @@ const Project:React.FC<ProjectProps> = ({
   }, []);
 
   return (
-    <div ref={project} className="w-4/5 p-5 rounded-lg radialgradient flex backdrop-blur-sm bg-opacity-10 h-1/2 items-center opacity-0">
+    <div ref={project} className="w-4/5 p-5 rounded-lg flex backdrop-blur-sm h-1/2 items-center opacity-0">
       <div className="w-100vh lg:w-1/2 p-3">
         <h1 className="DM.className text-slate-500 text-5xl font-bold tracking-tight p-3">{projectName}</h1>
         <p className="p-5 text-xl text-slate-400 italic border-b border-opacity-10 border-slate-100 ">{secondHeading}</p>
@@ -61,6 +63,9 @@ const Project:React.FC<ProjectProps> = ({
         <div className="flex items-center justify-center">
           <Link href={link} className="font-bold text-slate-800 m-3 px-10 py-2 rounded-lg bg-amber-300 hover:bg-amber-400" >
             Visit!
+          </Link>
+          <Link href={github} className="font-bold text-slate-700 m-3 px-10 py-2 rounded-lg bg-slate-300 hover:bg-slate-400" >
+            Github Repo
           </Link>
         </div>
       </div>

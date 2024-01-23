@@ -9,7 +9,7 @@ import About from './(components)/About';
 import Projects from './(components)/Projects';
 import Background from './(components)/components/Background';
 import ContactMe from './(components)/Contact';
-
+import Hero2 from './(components)/Hero2';
 
 export default function Home() {
   const sectionRefs = useRef<HTMLElement[]>([]); 
@@ -22,7 +22,8 @@ export default function Home() {
           <Background  />
         </div>
         <NavBar sectionRefs={sectionRefs.current}/>
-        <Hero forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "}
+        {/* <Hero forwardedRef={(el) => (sectionRefs.current[0] = el)} />{" "} */}
+        <Hero2 forwardedRef={(el) => (sectionRefs.current[0] = el)} />
         <Hook forwardedRef={(el) => (sectionRefs.current[1] = el)} />
         <About />
         <Projects />

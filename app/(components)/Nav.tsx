@@ -12,7 +12,7 @@ export default function NavBar({ sectionRefs }:{
 
   return (
     <header
-      className="fixed flex w-full items-center justify-between bg-secondary-100 px-5 py-3 z-50 bg-slate-950 bg-opacity-30 backdrop-blur-sm"
+      className="fixed flex w-full items-center justify-between bg-secondary-100 px-5 py-3 z-50 bg-black bg-opacity-20 "
       ref={nav}
     >
       <Link href="#hero" aria-label="Logo" className="z-50">
