@@ -3,8 +3,6 @@ import { useRef, useLayoutEffect, useEffect} from 'react';
 import Image from 'next/image';
 
 import gsap from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Background from './components/Background';
 
 import { FaStar } from "react-icons/fa";
 
@@ -52,7 +50,7 @@ export default function Hero2({ forwardedRef }:{
           <div className='star1 absolute left-28 bottom-48'>
             <FaStar size={48} color="#fcd34d" />
           </div>
-          <div className='star1 absolute right-28 bottom-48'>
+          <div className='star1 absolute right-28 bottom-0'>
             <FaStar size={48} color="#fef3c7" />
           </div>
           <div className='star absolute left-16 bottom-12'>
@@ -61,7 +59,7 @@ export default function Hero2({ forwardedRef }:{
           <div className='star1 absolute lg:right-36 bottom-1/2'>
             <FaStar size={40} color="#fcd34d" />
           </div>
-          <div className='star absolute right-16 bottom-1/2'>
+          <div className='star absolute right-16 top-0'>
             <FaStar size={45} color="#fcd34d" />
           </div>
         </div>

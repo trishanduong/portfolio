@@ -34,9 +34,6 @@ export default function About() {
   return (
     <section id="about" ref={aboutSection} aria-label="about me" className=" h-100vh w-screen">
       <div className="relative">
-        {/* <div className="absolute top-0 left-0 h-screen w-screen object-cover z-0 pointer-events-none">
-          <Background />
-        </div> */}
         <h1 ref={title} className="DM.className text-center text-7xl font-semibold tracking-tight text-amber-400 opacity-0">about me</h1>
         <div className="mt-10 flex flex-col items-start lg:flex-row lg:gap-10 p-7">
           <div ref={img} className="top-28 w-full flex flex-col justify-center items-center overflow-hidden rounded-sm lg:p-10 lg:w-1/2 opacity-0">

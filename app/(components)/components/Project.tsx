@@ -45,7 +45,7 @@ const Project:React.FC<ProjectProps> = ({
   }, []);
 
   return (
-    <div ref={project} className="w-4/5 p-5 rounded-lg flex backdrop-blur-sm h-1/2 items-center opacity-0">
+    <div ref={project} className="w-screen lg:w-4/5 p-5 rounded-lg flex backdrop-blur-sm h-1/2 items-center opacity-0">
       <div className="w-100vh lg:w-1/2 p-3">
         <h1 className="DM.className text-slate-500 text-5xl font-bold tracking-tight p-3">{projectName}</h1>
         <p className="p-5 text-xl text-slate-400 italic border-b border-opacity-10 border-slate-100 ">{secondHeading}</p>
@@ -65,7 +65,7 @@ const Project:React.FC<ProjectProps> = ({
             Visit!
           </Link>
           <Link href={github} className="font-bold text-slate-700 m-3 px-10 py-2 rounded-lg bg-slate-300 hover:bg-slate-400" >
-            Github Repo
+            Repo
           </Link>
         </div>
       </div>

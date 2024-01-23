@@ -71,11 +71,11 @@ const ContactMe = () => {
   }
 
   return (
-    <section ref={contactSection} id="contactme"  aria-label="contact me" className="h-screen flex justify-center items-center" >
+    <section ref={contactSection} id="contactme"  aria-label="contact me" className="" >
       <div className="relative">
-        <h1 ref={heading} className="text-center text-7xl font-semibold tracking-tight text-amber-400 pt-10 opacity-0" >Contact Me</h1>
-        <div ref={body} className="p-24 md:p-12 opacity-0">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <h1 ref={heading} className="text-center text-7xl font-semibold tracking-tight text-amber-400 lg:pt-10 opacity-0" >Contact Me</h1>
+        <div ref={body} className="p-12 opacity-0">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="md:col-span-3">
                 <h1 className="text-4xl font-bold mb-4 DM.className text-slate-400 tracking-tight">Got a question or proposal, or want to say hello?</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
