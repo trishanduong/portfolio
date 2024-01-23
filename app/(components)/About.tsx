@@ -6,6 +6,8 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
+import { FaStarOfLife } from "react-icons/fa";
+
 export default function About() {
   const title = useRef(null);
   const aboutSection = useRef(null);
@@ -34,7 +36,10 @@ export default function About() {
   return (
     <section id="about" ref={aboutSection} aria-label="about me" className=" h-100vh w-screen">
       <div className="relative">
-        <h1 ref={title} className="DM.className text-center text-7xl font-semibold tracking-tight text-amber-400 opacity-0">about me</h1>
+        <h1 ref={title} className="DM.className text-center text-7xl font-semibold tracking-tight text-amber-400 opacity-0">
+          <FaStarOfLife color="#475569" />
+          about me
+          </h1>
         <div className="mt-10 flex flex-col items-start lg:flex-row lg:gap-10 p-7">
           <div ref={img} className="top-28 w-full flex flex-col justify-center items-center overflow-hidden rounded-sm lg:p-10 lg:w-1/2 opacity-0">
             <Image
@@ -52,10 +57,10 @@ export default function About() {
                 <br></br>
                 {`I'm a software engineer based in Los Angeles, California.`}
                 <br></br>
-                <br></br>Prior to software engineering, I served in the healthcare sector, formerly as an EMT and primarily in the optical field. Although I remain passionate about helping others, I have developed a love for the art of coding and creating sophisticated full-stack applications, focusing on responsiveness and accessibility. 
+                <br></br>Prior to software engineering, I served in the healthcare sector, formerly as an EMT and primarily in the optical field. Although I remain passionate about helping others, I have developed a love for the art of coding and creating sophisticated applications. 
                 <br></br>
                 <br></br>
-                When I am not coding, you can find me enjoying a matcha latte 🍵, watching Studio Ghibli and Disney films 🏰, arts and crafts 🎨, or writing articles on{" "}
+                When I am not coding, you can find me enjoying a matcha latte 🍵, watching Studio Ghibli and Disney films,  arts and crafts 🎨,  or writing articles on{" "}
                 <Link
                   className="underline text-slate-500 font-semibold duration-300 ease-in-out hover:text-secondary-700"
                   href="https://medium.com/@trishanduong" >

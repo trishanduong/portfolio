@@ -56,7 +56,7 @@ export default function Hero2({ forwardedRef }:{
           <div className='star absolute left-16 bottom-12'>
             <FaStar size={20} color="#fef3c7" />
           </div>
-          <div className='star1 absolute lg:right-36 bottom-1/2'>
+          <div className='star1 absolute right-8 lg:right-36 bottom-1/2'>
             <FaStar size={40} color="#fcd34d" />
           </div>
           <div className='star absolute right-16 top-0'>

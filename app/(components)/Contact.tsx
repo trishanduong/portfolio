@@ -73,11 +73,11 @@ const ContactMe = () => {
   return (
     <section ref={contactSection} id="contactme"  aria-label="contact me" className="" >
       <div className="relative">
-        <h1 ref={heading} className="text-center text-7xl font-semibold tracking-tight text-amber-400 lg:pt-10 opacity-0" >Contact Me</h1>
+        <h1 ref={heading} className="text-center text-7xl font-semibold tracking-tight text-amber-400 lg:pt-10 opacity-0" >contact me</h1>
         <div ref={body} className="p-12 opacity-0">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="md:col-span-3">
-                <h1 className="text-4xl font-bold mb-4 DM.className text-slate-400 tracking-tight">Got a question or proposal, or want to say hello?</h1>
+                <h1 className="text-4xl font-bold mb-4 DM.className text-slate-400 tracking-tight">Got a question, proposal, or want to say hello?✨ </h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                   <input id="form-name" {...register("form-name")} type="text" placeholder="Your name" className="w-full p-2 text-xl border-gray-300 peer block text-white appearance-none border-0 border-b bg-transparent px-0 py-2.5 focus:outline-none focus:ring-0" />
                   
