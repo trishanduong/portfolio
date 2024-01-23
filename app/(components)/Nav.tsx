@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-export default function NavBar({ sectionRefs }:{
-  sectionRefs:HTMLElement[],
-}): JSX.Element {
+type NavBarProps = {
+  openModal: () => void;
+};
+
+const NavBar: React.FC<NavBarProps> = ({ openModal }) => {
   
   const nav = useRef(null);
   const logo = useRef(null);
@@ -35,6 +37,10 @@ export default function NavBar({ sectionRefs }:{
           <span>PROJECTS</span>
           <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
         </Link>
+        <button className="hidden group relative hover:text-slate-300 md:inline-block"  onClick={ openModal }>
+          <span>RESUME</span>
+          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+        </button>
         <Link
           className="group relative p-3 bg-slate-800 rounded-full hover:bg-slate-600 hover:text-slate-900"
           href="#contactme"
@@ -45,4 +51,6 @@ export default function NavBar({ sectionRefs }:{
       </nav>
     </header>
   );
-}
+};
+
+export default NavBar;

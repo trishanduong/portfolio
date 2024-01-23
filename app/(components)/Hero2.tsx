@@ -73,7 +73,7 @@ export default function Hero2({ forwardedRef }:{
               priority
             />
             <Image 
-              className='lg:hidden mainchar z-1000 pointer-events-none '
+              className='lg:hidden mainchar z-100 pointer-events-none '
               src="/newtheme/char.webp"
               alt="Pixelated female character sitting at a desk, coding. There is a pitbull sleeping next to her leg. "
               width={250}

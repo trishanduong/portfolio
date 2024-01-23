@@ -10,9 +10,13 @@ import { ScrollTrigger } from "gsap/all";
 
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { MdAttachFile } from "react-icons/md";
 
+type ContactProps = {
+  openModal: () => void;
+};
 
-const ContactMe = () => {
+const ContactMe: React.FC<ContactProps> = ({openModal}) => {
   const {
     register,
     handleSubmit,
@@ -92,6 +96,13 @@ const ContactMe = () => {
               <div className="">
                 <h2 className="text-2xl font-bold mb-4 text-slate-500 ">Email</h2>
                 <p className="mb-4 text-xl text-slate-300">trishanduong@gmail.com</p>
+                <div className="flex lg:hidden text-slate-300  font-bold">
+                  <button className="flex hover:text-slate-300"  onClick={ openModal } aria-label="Open resume">
+                    <h2 className="text-2xl mb-4 text-slate-500 ">Resume</h2>
+                    <MdAttachFile size={24} className="m-1" />
+                  </button>
+
+                </div>
                 <h2 className="text-2xl font-bold mb-4 text-slate-500 ">My Digital Spaces</h2>
                 <ul className="space-y-2 text-slate-300 text-xl">
                   <li className="p-1">         

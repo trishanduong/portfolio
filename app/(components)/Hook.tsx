@@ -37,7 +37,7 @@ export default function Hook({ forwardedRef }:{
           <FaStar color="yellow" size={32} />
         </div>
         <div>
-          <div className="text-5xl lg:text-6xl tracking-tighter px-10 lg:px-40">
+          <div className="text-4xl lg:text-6xl tracking-tighter px-10 lg:px-40">
             <div ref={text} className="w-full text-slate-500 font-medium opacity-0">
               <h1> I create, design, and code projects with
               <span className="italic text-slate-300"> intention.</span>

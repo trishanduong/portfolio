@@ -6,8 +6,6 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import { FaStarOfLife } from "react-icons/fa";
-
 export default function About() {
   const title = useRef(null);
   const aboutSection = useRef(null);
@@ -37,7 +35,6 @@ export default function About() {
     <section id="about" ref={aboutSection} aria-label="about me" className=" h-100vh w-screen">
       <div className="relative">
         <h1 ref={title} className="DM.className text-center text-7xl font-semibold tracking-tight text-amber-400 opacity-0">
-          <FaStarOfLife color="#475569" />
           about me
           </h1>
         <div className="mt-10 flex flex-col items-start lg:flex-row lg:gap-10 p-7">
@@ -49,7 +46,7 @@ export default function About() {
               height={400}
               alt="portrait image"/>
           </div>
-          <div className="top-20 text-3xl pt-10 lg:top-28 lg:w-1/2 ">
+          <div className="top-20 text-2xl pt-10 lg:top-28 lg:w-1/2 ">
             <div className="space-y-4 text-slate-300 lg:text-3xl">
               <p ref={body} className="pl-10 translate-y-10 tracking-tight opacity-0 backdrop-blur-sm lg:pl-0 lg:pr-32">
                 Hello! My name is Trisha.👋
@@ -57,7 +54,7 @@ export default function About() {
                 <br></br>
                 {`I'm a software engineer based in Los Angeles, California.`}
                 <br></br>
-                <br></br>Prior to software engineering, I served in the healthcare sector, formerly as an EMT and primarily in the optical field. Although I remain passionate about helping others, I have developed a love for the art of coding and creating sophisticated applications. 
+                <br></br>{`As someone with a background in healthcare, I've always been passionate about helping others. This fostered a love for coding and creating sophisticated applications that highlight how technology changes lives. `}
                 <br></br>
                 <br></br>
                 When I am not coding, you can find me enjoying a matcha latte 🍵, watching Studio Ghibli and Disney films,  arts and crafts 🎨,  or writing articles on{" "}

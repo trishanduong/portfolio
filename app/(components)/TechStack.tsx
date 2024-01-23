@@ -3,6 +3,8 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
+import { FaStarOfLife } from "react-icons/fa";
+
 
 const TechStack = () => {
     const techSection = useRef(null);
@@ -27,7 +29,7 @@ const TechStack = () => {
       }, []);
     return (
         <div ref={techSection} className="h-screen w-full">
-            <h1 ref={title} className="DM.className text-center text-7xl font-semibold tracking-tight text-amber-400 opacity-0">my tech toolkit</h1>
+            <h1 ref={title} className="DM.className text-center lg:pl-24 text-5xl font-normal tracking-tight text-amber-200 opacity-0">my tech toolkit 🔨</h1>
             <div className="flex justify-around text-6xl text-amber-300 p-9">
               <div className="frontend ">
                 <h1>Frontend </h1>
