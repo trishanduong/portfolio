@@ -17,7 +17,7 @@ export default function Hook({ forwardedRef }:{
 
     ScrollTrigger.create({
       trigger: hookSection.current,
-      start: "top 900px",
+      start: "top 800px",
       animation: gsap
         .timeline()
         .to(
@@ -33,6 +33,9 @@ export default function Hook({ forwardedRef }:{
 
     return (
       <section id="hook" ref={hookSection} className="h-screen w-full flex justify-center items-center">
+        <div className="flex">
+          <FaStar color="yellow" size={32} />
+        </div>
         <div>
           <div className="text-5xl lg:text-6xl tracking-tighter px-10 lg:px-40">
             <div ref={text} className="w-full text-slate-500 font-medium opacity-0">

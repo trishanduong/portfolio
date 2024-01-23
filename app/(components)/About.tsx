@@ -44,9 +44,9 @@ export default function About() {
               height={400}
               alt="portrait image"/>
           </div>
-          <div className="top-20 text-3xl pt-10 lg:top-28 lg:w-1/2 backdrop-blur-sm">
+          <div className="top-20 text-3xl pt-10 lg:top-28 lg:w-1/2 ">
             <div className="space-y-4 text-slate-300 lg:text-3xl">
-              <p ref={body} className="pl-10 translate-y-10 tracking-tight opacity-0 lg:pl-0 lg:pr-32">
+              <p ref={body} className="pl-10 translate-y-10 tracking-tight opacity-0 backdrop-blur-sm lg:pl-0 lg:pr-32">
                 Hello! My name is Trisha.👋
                 <br></br>
                 <br></br>

@@ -21,8 +21,7 @@ export default function Hero2({ forwardedRef }:{
       const t1 = gsap.timeline();
       
       t1.fromTo(".intro",{scale:1, opacity:0},{y:'-=50', opacity:1, duration:0.4, stagger:0.3 })
-        .to(".mainchar", {opacity: 1, duration: 0.1});
-     
+   
         gsap.to(".mainchar", {y:"+=25", repeat:-1, yoyo:true, duration:2 });
         gsap.to('.star', {rotate:360, repeat:-1, yoyo:true, duration:5 })
         gsap.to('.star1', {rotate:-360, repeat:-1, yoyo:true, duration:5 })
@@ -66,7 +65,7 @@ export default function Hero2({ forwardedRef }:{
         </div>
           <div className='z-20'>
             <Image 
-              className='hidden mainchar lg:block lg:left-64 lg:right-1/2 lg:z-60 lg:bottom-1/4 lg:pointer-events-non opacity-0' 
+              className='hidden mainchar lg:block lg:left-64 lg:right-1/2 lg:z-60 lg:bottom-1/4 lg:pointer-events-none ' 
               src="/newtheme/char.webp"
               alt="Pixelated female character sitting at a desk, coding. There is a pitbull sleeping next to her leg."
               width={300}
@@ -74,7 +73,7 @@ export default function Hero2({ forwardedRef }:{
               priority
             />
             <Image 
-              className='lg:hidden mainchar z-1000 pointer-events-none opacity-0'
+              className='lg:hidden mainchar z-1000 pointer-events-none '
               src="/newtheme/char.webp"
               alt="Pixelated female character sitting at a desk, coding. There is a pitbull sleeping next to her leg. "
               width={250}
