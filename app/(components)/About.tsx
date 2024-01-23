@@ -44,24 +44,24 @@ export default function About() {
               height={400}
               alt="portrait image"/>
           </div>
-          <div className="top-20 text-3xl pt-10 lg:top-28 lg:w-1/2">
+          <div className="top-20 text-3xl pt-10 lg:top-28 lg:w-1/2 backdrop-blur-sm">
             <div className="space-y-4 text-slate-300 lg:text-3xl">
               <p ref={body} className="pl-10 translate-y-10 tracking-tight opacity-0 lg:pl-0 lg:pr-32">
-                Hello! My name is Trisha.
+                Hello! My name is Trisha.👋
                 <br></br>
                 <br></br>
                 {`I'm a software engineer based in Los Angeles, California.`}
                 <br></br>
-                <br></br>I craft sophisticated full-stack applications, seamlessly blending responsiveness and accessibility. 
-                My passion extends beyond just development. I also love to contribute to open-source projects and am constantly seeking innovative solutions to complex problems.
+                <br></br>Prior to software engineering, I served in the healthcare sector, formerly as an EMT and primarily in the optical field. Although I remain passionate about helping others, I have developed a love for the art of coding and creating sophisticated full-stack applications, focusing on responsiveness and accessibility. 
                 <br></br>
                 <br></br>
-                When I am not developing, you can find me enjoying a matcha latte, watching Studio Ghibli films, or writing articles on{" "}
+                When I am not coding, you can find me enjoying a matcha latte 🍵, watching Studio Ghibli and Disney films 🏰, arts and crafts 🎨, or writing articles on{" "}
                 <Link
                   className="underline text-slate-500 font-semibold duration-300 ease-in-out hover:text-secondary-700"
                   href="https://medium.com/@trishanduong" >
-                  Medium.
+                  Medium. 
                 </Link>
+                {` ✍️`}
               </p>
             </div>
           </div>

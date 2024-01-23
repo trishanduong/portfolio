@@ -20,7 +20,8 @@ export default function Hero2({ forwardedRef }:{
       //define GSAP timeline to create a sequence of animations
       const t1 = gsap.timeline();
       
-      t1.fromTo(".intro",{scale:1, opacity:0},{y:'-=50', opacity:1, duration:0.4, stagger:0.3 });
+      t1.fromTo(".intro",{scale:1, opacity:0},{y:'-=50', opacity:1, duration:0.4, stagger:0.3 })
+        .to(".mainchar", {opacity: 1, duration: 0.1});
      
         gsap.to(".mainchar", {y:"+=25", repeat:-1, yoyo:true, duration:2 });
         gsap.to('.star', {rotate:360, repeat:-1, yoyo:true, duration:5 })
@@ -37,7 +38,7 @@ export default function Hero2({ forwardedRef }:{
         {/* Make the parent of the lanterns with relative, overflow-hidden*/}
       <div className='relative h-screen w-screen flex flex-col justify-center items-center overflow-hidden overflow-z-auto'>
         <div className='w-screen translate-y-28'>
-          <h1 className='intro relative font-extrabold text-slate-50 tracking-tighter text-center text-6xl opacity-0 lg:text-8xl DM.className z-[10]'>trisha duong. </h1>
+          <h1 className='intro relative font-extrabold text-slate-50 tracking-tighter text-center text-6xl opacity-0 lg:text-8xl DM.className z-[10]'>TRISHA DUONG </h1>
           <h2 className='intro relative text-amber-300 tracking-tighter text-center text-4xl opacity-0 z-[10]'>software engineer</h2>
           <div className='star flex justify-center items-center'>
             <FaStar size={32} color="#fcd34d" />
@@ -65,17 +66,17 @@ export default function Hero2({ forwardedRef }:{
         </div>
           <div className='z-20'>
             <Image 
-              className='hidden mainchar lg:block lg:left-64 lg:right-1/2 lg:z-60 lg:bottom-1/4 lg:pointer-events-none' 
+              className='hidden mainchar lg:block lg:left-64 lg:right-1/2 lg:z-60 lg:bottom-1/4 lg:pointer-events-non opacity-0' 
               src="/newtheme/char.webp"
-              alt="Female silhouette in boat"
+              alt="Pixelated female character sitting at a desk, coding. There is a pitbull sleeping next to her leg."
               width={300}
               height={300}
               priority
             />
             <Image 
-              className='lg:hidden mainchar z-1000  pointer-events-none'
+              className='lg:hidden mainchar z-1000 pointer-events-none opacity-0'
               src="/newtheme/char.webp"
-              alt="Female silhouette in boat"
+              alt="Pixelated female character sitting at a desk, coding. There is a pitbull sleeping next to her leg. "
               width={250}
               height={250}
               priority
