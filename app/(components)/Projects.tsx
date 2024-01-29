@@ -40,7 +40,7 @@ const ProjectData = [
     desc: 'I primarily focused on creating a landing website that was minimalistic yet fun, introducing light animations using GSAP. Most of my time was spent trying to improve performance, SEO, and the accessibility of this website.',
     techStack: ['React.js', 'Typescript', 'TailwindCSS', 'Vite', 'gsap'],
     images:['/projects/classonedonuts/landing.png', 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHB2enRhZ3lxOWM1NDI2d2djZmN0ODFwNzF0MXRxbGhqd2R3ZXFsbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bNULtw7OLa17dG2OEc/giphy.gif', '/projects/classonedonuts/contact.png'],
-    link:'https://sensational-babka-f97e3b.netlify.app/',
+    link:'https://classonedonuts.netlify.app',
     github:'https://github.com/trishanduong/classonedonuts',
   },
   
